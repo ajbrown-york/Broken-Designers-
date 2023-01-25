@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="48">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="70">
  <tileset firstgid="1" source="Tile Images.tsx"/>
+ <tileset firstgid="29" source="Tile Images.tsx"/>
  <layer id="4" name="Tile Layer 2" width="30" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -44,8 +45,8 @@
 7,7,27,7,7,22,7,7,7,17,7,16,7,7,7,7,7,7,7,7,7,7,7,16,16,0,0,0,0,0,
 7,7,28,7,7,21,7,7,7,7,7,16,7,7,7,7,7,7,7,7,7,7,7,16,16,0,0,0,0,0,
 7,7,7,7,7,7,7,7,7,7,7,16,7,7,7,7,7,7,7,7,7,7,7,16,16,0,0,0,0,0,
-7,7,16,7,7,7,7,7,13,7,7,16,7,6,7,7,7,7,7,7,7,7,7,16,16,0,0,0,0,0,
-7,7,15,7,7,7,7,7,7,7,7,15,7,7,6,6,6,6,7,7,7,7,7,16,16,0,0,0,0,0,
+7,7,16,7,7,7,7,7,13,7,7,16,7,53,7,7,7,7,7,7,7,7,7,16,16,0,0,0,0,0,
+7,7,15,7,7,7,7,7,7,7,7,15,7,7,6,53,6,53,7,7,7,7,7,16,16,0,0,0,0,0,
 7,7,14,7,7,7,7,7,7,7,7,14,7,7,7,7,7,7,7,7,7,7,7,16,16,0,0,0,0,0
 </data>
  </layer>
@@ -124,8 +125,58 @@
     <property name="objectType" value="CustomerCounter"/>
    </properties>
   </object>
+  <object id="56" x="400.247" y="377.174" width="48" height="48">
+   <properties>
+    <property name="itemType" value="Lettuce"/>
+    <property name="objectType" value="Dispenser"/>
+   </properties>
+  </object>
+  <object id="57" x="448.821" y="352.446" width="30.7784" height="48">
+   <properties>
+    <property name="itemType" value="Tomato"/>
+    <property name="objectType" value="Dispenser"/>
+   </properties>
+  </object>
+  <object id="58" x="480.394" y="352.888" width="30.7784" height="48">
+   <properties>
+    <property name="itemType" value="Onion"/>
+    <property name="objectType" value="Dispenser"/>
+   </properties>
+  </object>
+  <object id="59" x="513.07" y="353.771" width="30.7784" height="48">
+   <properties>
+    <property name="itemType" value="Meat"/>
+    <property name="objectType" value="Dispenser"/>
+   </properties>
+  </object>
+  <object id="60" x="545.306" y="352.005" width="30.7784" height="48">
+   <properties>
+    <property name="itemType" value="Bun"/>
+    <property name="objectType" value="Dispenser"/>
+   </properties>
+  </object>
+  <object id="66" x="410.227" y="537.402" width="43.7163" height="37.5342">
+   <properties>
+    <property name="objectType" value="Assembly"/>
+   </properties>
+  </object>
+  <object id="67" x="478.23" y="560.805" width="34.4432" height="65.3537">
+   <properties>
+    <property name="objectType" value="Baking"/>
+   </properties>
+  </object>
+  <object id="68" x="543.584" y="562.572" width="33.56" height="64.029">
+   <properties>
+    <property name="objectType" value="Cooking"/>
+   </properties>
+  </object>
+  <object id="69" x="287.313" y="376.071" width="48" height="48">
+   <properties>
+    <property name="objectType" value="Cutting"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup id="2" name="Collision Layer" visible="0">
+ <objectgroup id="2" name="Collision Layer">
   <object id="1" x="66" y="384" width="28" height="128"/>
   <object id="4" x="0" y="288" width="352" height="64"/>
   <object id="6" x="64" y="544" width="32" height="96"/>
@@ -138,5 +189,10 @@
   <object id="30" x="736" y="352" width="32" height="288"/>
   <object id="44" x="160" y="384" width="160" height="32"/>
   <object id="46" x="160" y="416" width="29" height="96"/>
+  <object id="61" x="544" y="352" width="32" height="32"/>
+  <object id="62" x="448" y="352" width="32" height="32"/>
+  <object id="63" x="480" y="352" width="32" height="32"/>
+  <object id="64" x="512" y="352" width="32" height="32"/>
+  <object id="65" x="416" y="384" width="32" height="32"/>
  </objectgroup>
 </map>

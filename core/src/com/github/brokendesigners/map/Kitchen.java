@@ -12,11 +12,8 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
 import com.github.brokendesigners.Constants;
 import com.github.brokendesigners.item.ItemRegister;
-import com.github.brokendesigners.map.interactable.BinStation;
-import com.github.brokendesigners.map.interactable.CounterStation;
-import com.github.brokendesigners.map.interactable.CustomerStation;
-import com.github.brokendesigners.map.interactable.DispenserStation;
-import com.github.brokendesigners.map.interactable.Station;
+import com.github.brokendesigners.map.interactable.*;
+
 import java.util.ArrayList;
 
 public class Kitchen {
@@ -95,6 +92,16 @@ public class Kitchen {
 							objectPosition.y,
 							rectangle.width * Constants.UNIT_SCALE,
 							rectangle.height * Constants.UNIT_SCALE)));
+			} else if (rectangleMapObject.getProperties().get("objectType").equals("Assembly")){
+
+				kitchenStations.add(
+						new AssemblyStation(
+								objectPosition,
+								rectangle.width * Constants.UNIT_SCALE,
+								rectangle.height * Constants.UNIT_SCALE,
+								objectPosition.x,
+								objectPosition.y
+						));
 			}
 
 		}
